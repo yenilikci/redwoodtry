@@ -17,7 +17,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
           </h1>
           {isAuthenticated ? (
             <div>
-              <span>Logged in as {currentUser.email}</span>{' '}
+              <span>Logged in as {currentUser?.email}</span>{' '}
               <button type="button" onClick={logOut}>
                 Logout
               </button>
